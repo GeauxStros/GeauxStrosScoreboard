@@ -8,9 +8,12 @@ body {
 }
 
 /* Scoreboard Container: fix full-width issue */
-.containerbaseball {
+#boxes {
   max-width: 900px;
   margin: 0 auto;
+}
+
+.containerbaseball {
   border: 4px solid #eb6e1f;
   border-radius: 10px;
   padding: 1vw;
@@ -23,7 +26,7 @@ body {
   color: #ffffff;
   border-radius: 6px;
   box-shadow: 0 0 4px #eb6e1f55;
-  font-size: 18px;
+  font-size: 22px;
   text-align: center;
   padding: 0.3em 0.6em;
 }
@@ -32,7 +35,7 @@ body {
 .boxhomepoints, .boxawaypoints {
   background: #eb6e1f;
   color: #0d1117;
-  font-size: 28px;
+  font-size: 32px;
   font-weight: bold;
 }
 
@@ -40,7 +43,7 @@ body {
 .boxhometeam, .boxawayteam {
   position: relative;
   padding-left: 60px;
-  font-size: 24px;
+  font-size: 28px;
   font-weight: bold;
   letter-spacing: 1px;
 }
@@ -78,7 +81,7 @@ body {
   display: inline-block;
 }
 
-.containerbases .boxon {
+.containerbases .boxbaseson {
   background-color: #eb6e1f;
   box-shadow: 0 0 6px #eb6e1f;
 }
@@ -87,7 +90,7 @@ body {
 .boxinnings, .boxinningslabel {
   background: #133c94;
   color: #ffffff;
-  font-size: 16px;
+  font-size: 18px;
   border: 1px solid #eb6e1f;
   border-radius: 4px;
 }
@@ -98,12 +101,14 @@ body {
   color: #001a3c;
   border: 1px solid #eb6e1f;
   font-weight: bold;
+  font-size: 18px;
 }
 
 .boxouts {
   background: #000000;
   color: #ffffff;
   border: 1px solid #eb6e1f;
+  font-size: 18px;
 }
 
 /* Active Service Arrows */
@@ -119,4 +124,3 @@ body {
 .sgrlogo {
   display: none;
 }
-
