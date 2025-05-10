@@ -38,9 +38,9 @@ em {
   position: relative;
   box-sizing: border-box;
   height: auto;
-  float: left;
+  float: none;
   clear: both;
-  width: auto;
+  width: 100%;
   display: grid;
   column-gap: 1vw;
   background: var(--bkgimage);
@@ -52,12 +52,21 @@ em {
   transform: skew(var(--skew));
 }
 
+.containerbaseball {
+  max-width: 50vw;
+  margin: 0 auto;
+  position: relative;
+  font-size: 6vw;
+  display: grid;
+  grid-template: repeat(3, auto) / auto var(--pointswidth) 1.5em;
+}
+
 .boxpoints,
 .containergamedata,
 .containerouts,
 .containerboxstrikes,
 .containerbases {
-  background: var(--bkgmedium);
+  background: var(--bkgmedium) !important;
 }
 
 .containerbaseball .boxbases {
@@ -87,5 +96,20 @@ em {
   background: var(--signalcolor) !important;
 }
 
-/* Keep all other existing layout and sport-specific rules unchanged */
+/* Fix any legacy red backgrounds */
+.containerbaseball .box,
+.containerbaseball .containergamedata,
+.containerbaseball .containerlastrow,
+.containerbaseball .boxpoints {
+  background-color: var(--bkgmedium) !important;
+}
 
+.containerbaseball .boxteams {
+  background-color: #001a3c !important;
+}
+
+.containerbaseball .boxpoints {
+  color: white;
+  font-weight: bold;
+  justify-content: center;
+}
