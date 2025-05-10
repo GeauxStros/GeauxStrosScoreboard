@@ -1,4 +1,4 @@
-/* Astros Anime-Style Theme for FlexyScore Scoreboard */
+/* Astros Anime-Style Theme Based on FlexyScore Ocean Layout */
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 body {
@@ -7,136 +7,101 @@ body {
   color: #ffffff;
 }
 
-/* Scoreboard Container: fix full-width issue and height ratio */
-#boxes {
-  max-width: 900px;
-  margin: 2rem auto;
-  padding: 1rem;
-}
-
+/* Main container */
 .containerbaseball {
+  background-color: #0b1320;
   border: 4px solid #eb6e1f;
   border-radius: 10px;
-  padding: 2vw;
-  background-color: #0b1320;
-  display: flex;
-  flex-direction: column;
-  gap: 1.5vw;
-  min-height: 300px;
+  padding: 1rem;
+  max-width: 650px;
+  margin: auto;
 }
 
-/* Score Boxes */
+/* General box styles */
 .box {
   background: #001a3c;
   color: #ffffff;
   border-radius: 6px;
-  box-shadow: 0 0 4px #eb6e1f55;
-  font-size: 24px;
+  font-size: 22px;
+  padding: 0.5rem;
   text-align: center;
-  padding: 0.6em 0.8em;
 }
 
-/* Points */
 .boxhomepoints, .boxawaypoints {
-  background: #eb6e1f;
+  background-color: #eb6e1f;
   color: #0d1117;
   font-size: 36px;
   font-weight: bold;
 }
 
-/* Team Names with Logos */
 .boxhometeam, .boxawayteam {
-  position: relative;
-  padding-left: 70px;
-  font-size: 32px;
+  font-size: 28px;
   font-weight: bold;
-  letter-spacing: 1px;
 }
 
-.boxhometeam:before, .boxawayteam:before {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  top: 50%;
-  left: 10px;
-  transform: translateY(-50%);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.boxhometeam:before {
-  background-image: url("https://upload.wikimedia.org/wikipedia/en/6/60/Houston_Astros_logo.svg");
-}
-
-.boxawayteam:before {
-  background-image: url("https://upload.wikimedia.org/wikipedia/en/thumb/0/01/Cincinnati_Reds_Logo.svg/800px-Cincinnati_Reds_Logo.svg.png");
-}
-
-/* Bases On/Off */
-.containerbases {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 12px;
-  padding: 10px 0;
-  min-height: 40px;
-}
-
-.containerbases .boxbases {
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  background-color: transparent;
-  border: 2px solid #eb6e1f;
-  display: inline-block;
-}
-
-.containerbases .boxbaseson {
-  background-color: #eb6e1f;
-  box-shadow: 0 0 10px #eb6e1f;
-}
-
-/* Inning Label & Number */
 .boxinnings, .boxinningslabel {
-  background: #133c94;
+  background-color: #133c94;
+  border: 2px solid #eb6e1f;
   color: #ffffff;
-  font-size: 22px;
-  border: 1px solid #eb6e1f;
+  font-size: 20px;
+  padding: 0.25rem 0.5rem;
   border-radius: 4px;
 }
 
-/* Balls-Strikes */
-.boxballs, .boxstrikes {
-  background: #ffffff;
-  color: #001a3c;
-  border: 1px solid #eb6e1f;
-  font-weight: bold;
-  font-size: 22px;
-  padding: 0.4em 0.6em;
-}
-
-.boxouts {
-  background: #000000;
-  color: #ffffff;
-  border: 1px solid #eb6e1f;
-  font-size: 22px;
-  padding: 0.4em 0.6em;
-}
-
-/* Active Service Arrows */
+/* Service Arrows */
 .okservice svg {
   fill: #ffd300;
 }
 
 .noservice svg {
-  fill: #666;
+  fill: #333333;
 }
 
-/* Hide default watermark */
+/* Bases */
+.containerbases {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 0.5rem;
+}
+
+.boxbases {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid #eb6e1f;
+  background-color: transparent;
+}
+
+.boxbaseson {
+  background-color: #eb6e1f;
+  box-shadow: 0 0 4px #eb6e1f;
+}
+
+/* Balls-Strikes-Outs */
+.boxballs, .boxstrikes {
+  background-color: #ffffff;
+  color: #0b1320;
+  border: 1px solid #eb6e1f;
+  padding: 0.3rem 0.6rem;
+  font-size: 20px;
+}
+
+.boxouts {
+  background-color: #000000;
+  color: #ffffff;
+  border: 1px solid #eb6e1f;
+  padding: 0.3rem 0.6rem;
+  font-size: 20px;
+}
+
+/* Scoreboard width limit */
+#boxes {
+  padding: 1rem;
+}
+
+/* Hide watermark */
 .sgrlogo {
   display: none;
 }
-
