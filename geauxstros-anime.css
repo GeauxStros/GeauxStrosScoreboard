@@ -1,131 +1,107 @@
-/* GEAUX STROS Anime-Themed Scoreboard CSS for FlexyScore */
+/* Astros Anime-Themed CSS for FlexyScore Live Display */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 body {
-    background-color: #0d1117;
-    font-family: 'Bebas Neue', 'Arial Black', sans-serif;
-    color: #ffffff;
+  background-color: #0d1117;
+  font-family: 'Bebas Neue', sans-serif;
+  color: #ffffff;
 }
 
-h2, p.label {
-    color: #EB6E1F;
-    text-shadow: 1px 1px 2px #000;
+/* Team Names */
+.boxteams {
+  font-size: 24px;
+  font-weight: bold;
+  background-color: #002D72;
+  color: #ffffff;
+  text-shadow: 1px 1px 3px #EB6E1F;
+  border: 2px solid #EB6E1F;
+  padding: 8px;
+  border-radius: 8px;
 }
 
-.appname h2 {
-    font-size: 28px;
-    letter-spacing: 1px;
-    color: #ffffff;
-    text-shadow: 2px 2px 4px #EB6E1F;
+/* Points */
+.boxpoints {
+  font-size: 28px;
+  font-weight: bold;
+  background-color: #EB6E1F;
+  color: #ffffff;
+  border-radius: 6px;
+  padding: 8px 14px;
+  margin: 0 6px;
+  box-shadow: 0 0 6px #EB6E1Faa;
 }
 
-.containercomandi {
-    background-color: #002D72;
-    border: 3px solid #EB6E1F;
-    padding: 15px;
-    border-radius: 12px;
-    box-shadow: 0 0 10px #EB6E1F88;
+/* Inning Info */
+.boxinnings, .boxinningslabel {
+  font-size: 20px;
+  background-color: #133c94;
+  color: white;
+  border: 2px solid #EB6E1F;
+  border-radius: 6px;
+  padding: 6px;
 }
 
-.button {
-    background-color: #EB6E1F;
-    color: white;
-    border: none;
-    padding: 6px 12px;
-    border-radius: 6px;
-    font-weight: bold;
-    font-size: 14px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+/* Balls, Strikes, Outs */
+.boxballs, .boxstrikes, .boxouts {
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #ffffff;
+  color: #002D72;
+  border: 2px solid #EB6E1F;
+  padding: 4px 8px;
+  border-radius: 6px;
 }
 
-.button:hover {
-    background-color: #ff7f32;
+.boxoutslabel, .boxballsstrikesseparator {
+  color: #ffffff;
+  font-size: 14px;
+  text-shadow: 0 0 3px #EB6E1F;
 }
 
-input[type="text"] {
-    background-color: #ffffff;
-    color: #002D72;
-    border: 2px solid #EB6E1F;
-    border-radius: 6px;
-    padding: 4px 8px;
-    font-weight: bold;
-    text-align: center;
-    font-size: 14px;
+/* Bases */
+.boxbases {
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  margin: 2px;
 }
 
-.team {
-    font-size: 20px;
-    font-weight: bold;
-    color: #ffffff;
-    margin-bottom: 8px;
+.boxbaseson {
+  background-color: #EB6E1F !important;
+  box-shadow: 0 0 8px #EB6E1Faa;
 }
 
-.value {
-    font-size: 18px;
-    color: #ffffff;
-    font-weight: bold;
+/* Container styling */
+.containerbaseball {
+  border: 4px solid #EB6E1F;
+  border-radius: 12px;
+  padding: 12px;
+  background-color: #002D72;
+  box-shadow: 0 0 10px #EB6E1F44;
 }
 
-#connalert {
-    background-color: #ff0000;
-    color: white;
-    padding: 6px;
-    border-radius: 6px;
-    margin-top: 10px;
-    font-size: 14px;
+/* General box styling */
+.box {
+  margin: 5px;
+  padding: 4px;
+  text-align: center;
 }
 
-hr {
-    border: 1px solid #EB6E1F;
-    margin: 10px 0;
+/* Optional: glowing animation for active elements */
+@keyframes pulseGlow {
+  0% { box-shadow: 0 0 5px #EB6E1F; }
+  50% { box-shadow: 0 0 15px #EB6E1F; }
+  100% { box-shadow: 0 0 5px #EB6E1F; }
 }
 
-.dashboardurl, .menubottom button {
-    background-color: #002D72;
-    color: white;
-    font-weight: bold;
-    padding: 8px;
-    border: 2px solid #EB6E1F;
-    border-radius: 6px;
-    margin: 6px 0;
-    transition: 0.3s ease;
+.boxinnings, .boxpoints, .boxteams {
+  animation: pulseGlow 3s infinite;
 }
 
-.dashboardurl:hover, .menubottom button:hover {
-    background-color: #133c94;
+/* Hide FlexyScore watermark if desired */
+.sgrlogo {
+  display: none;
 }
-
-/* Bases and Status Highlights */
-.button.baseOne, .button.baseTwo, .button.baseThree {
-    background-color: #ffffff;
-    color: #002D72;
-    font-weight: bold;
-    border: 2px solid #EB6E1F;
-}
-
-.button.baseOne.active,
-.button.baseTwo.active,
-.button.baseThree.active {
-    background-color: #EB6E1F;
-    color: white;
-    border: 2px solid #ffffff;
-}
-
-/* Optional: add animated pulsing border for active inning or special condition */
-#innings, #outs, #balls, #strikes {
-    animation: glow 2s infinite ease-in-out;
-}
-
-@keyframes glow {
-    0% { text-shadow: 0 0 5px #EB6E1F; }
-    50% { text-shadow: 0 0 15px #EB6E1F; }
-    100% { text-shadow: 0 0 5px #EB6E1F; }
-}
-
-/* Clean up extras */
-.nametooltip {
-    display: none;
-}
-
-/* Optional font import */
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
