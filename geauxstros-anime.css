@@ -3,91 +3,91 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 body {
-  background-color: #0d1117;
-  font-family: 'Bebas Neue', sans-serif;
-  color: #ffffff;
+  background-color: #0d1117 !important;
+  font-family: 'Bebas Neue', sans-serif !important;
+  color: #ffffff !important;
 }
 
 /* Team Names */
-.boxteams {
-  font-size: 24px;
-  font-weight: bold;
-  background-color: #002D72;
-  color: #ffffff;
-  text-shadow: 1px 1px 3px #EB6E1F;
-  border: 2px solid #EB6E1F;
-  padding: 8px;
-  border-radius: 8px;
+.box.boxteams {
+  font-size: 24px !important;
+  font-weight: bold !important;
+  background-color: #002D72 !important;
+  color: #ffffff !important;
+  text-shadow: 1px 1px 3px #EB6E1F !important;
+  border: 2px solid #EB6E1F !important;
+  padding: 8px !important;
+  border-radius: 8px !important;
 }
 
 /* Points */
-.boxpoints {
-  font-size: 28px;
-  font-weight: bold;
-  background-color: #EB6E1F;
-  color: #ffffff;
-  border-radius: 6px;
-  padding: 8px 14px;
-  margin: 0 6px;
-  box-shadow: 0 0 6px #EB6E1Faa;
+.box.boxpoints {
+  font-size: 28px !important;
+  font-weight: bold !important;
+  background-color: #EB6E1F !important;
+  color: #ffffff !important;
+  border-radius: 6px !important;
+  padding: 8px 14px !important;
+  margin: 0 6px !important;
+  box-shadow: 0 0 6px #EB6E1Faa !important;
 }
 
 /* Inning Info */
-.boxinnings, .boxinningslabel {
-  font-size: 20px;
-  background-color: #133c94;
-  color: white;
-  border: 2px solid #EB6E1F;
-  border-radius: 6px;
-  padding: 6px;
+.box.boxinnings, .box.boxinningslabel {
+  font-size: 20px !important;
+  background-color: #133c94 !important;
+  color: white !important;
+  border: 2px solid #EB6E1F !important;
+  border-radius: 6px !important;
+  padding: 6px !important;
 }
 
 /* Balls, Strikes, Outs */
-.boxballs, .boxstrikes, .boxouts {
-  font-size: 20px;
-  font-weight: bold;
-  background-color: #ffffff;
-  color: #002D72;
-  border: 2px solid #EB6E1F;
-  padding: 4px 8px;
-  border-radius: 6px;
+.box.boxballs, .box.boxstrikes, .box.boxouts {
+  font-size: 20px !important;
+  font-weight: bold !important;
+  background-color: #ffffff !important;
+  color: #002D72 !important;
+  border: 2px solid #EB6E1F !important;
+  padding: 4px 8px !important;
+  border-radius: 6px !important;
 }
 
-.boxoutslabel, .boxballsstrikesseparator {
-  color: #ffffff;
-  font-size: 14px;
-  text-shadow: 0 0 3px #EB6E1F;
+.box.boxouts.boxoutslabel, .box.boxballsstrikesseparator {
+  color: #ffffff !important;
+  font-size: 14px !important;
+  text-shadow: 0 0 3px #EB6E1F !important;
 }
 
 /* Bases */
-.boxbases {
-  width: 20px;
-  height: 20px;
-  background-color: transparent;
-  border: 2px solid #ffffff;
-  border-radius: 50%;
-  margin: 2px;
+.box.boxbases {
+  width: 20px !important;
+  height: 20px !important;
+  background-color: transparent !important;
+  border: 2px solid #ffffff !important;
+  border-radius: 50% !important;
+  margin: 2px !important;
 }
 
-.boxbaseson {
+.box.boxbaseson {
   background-color: #EB6E1F !important;
-  box-shadow: 0 0 8px #EB6E1Faa;
+  box-shadow: 0 0 8px #EB6E1Faa !important;
 }
 
 /* Container styling */
-.containerbaseball {
-  border: 4px solid #EB6E1F;
-  border-radius: 12px;
-  padding: 12px;
-  background-color: #002D72;
-  box-shadow: 0 0 10px #EB6E1F44;
+.container.containerbaseball {
+  border: 4px solid #EB6E1F !important;
+  border-radius: 12px !important;
+  padding: 12px !important;
+  background-color: #002D72 !important;
+  box-shadow: 0 0 10px #EB6E1F44 !important;
 }
 
 /* General box styling */
 .box {
-  margin: 5px;
-  padding: 4px;
-  text-align: center;
+  margin: 5px !important;
+  padding: 4px !important;
+  text-align: center !important;
 }
 
 /* Optional: glowing animation for active elements */
@@ -97,11 +97,11 @@ body {
   100% { box-shadow: 0 0 5px #EB6E1F; }
 }
 
-.boxinnings, .boxpoints, .boxteams {
-  animation: pulseGlow 3s infinite;
+.box.boxinnings, .box.boxpoints, .box.boxteams {
+  animation: pulseGlow 3s infinite !important;
 }
 
 /* Hide FlexyScore watermark if desired */
 .sgrlogo {
-  display: none;
+  display: none !important;
 }
