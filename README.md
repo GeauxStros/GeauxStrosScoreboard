@@ -1,0 +1,2 @@
+# GeauxStrosScoreboard
+Scoreboard
