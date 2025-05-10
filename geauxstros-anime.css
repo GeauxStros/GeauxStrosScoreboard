@@ -21,7 +21,8 @@ body {
   background-color: #0b1320;
   display: flex;
   flex-direction: column;
-  gap: 1vw;
+  gap: 1.5vw;
+  min-height: 300px;
 }
 
 /* Score Boxes */
@@ -32,14 +33,14 @@ body {
   box-shadow: 0 0 4px #eb6e1f55;
   font-size: 24px;
   text-align: center;
-  padding: 0.5em 0.8em;
+  padding: 0.6em 0.8em;
 }
 
 /* Points */
 .boxhomepoints, .boxawaypoints {
   background: #eb6e1f;
   color: #0d1117;
-  font-size: 34px;
+  font-size: 36px;
   font-weight: bold;
 }
 
@@ -47,7 +48,7 @@ body {
 .boxhometeam, .boxawayteam {
   position: relative;
   padding-left: 70px;
-  font-size: 30px;
+  font-size: 32px;
   font-weight: bold;
   letter-spacing: 1px;
 }
@@ -79,13 +80,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
-  padding-top: 5px;
+  gap: 12px;
+  padding: 10px 0;
+  min-height: 40px;
 }
 
 .containerbases .boxbases {
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
   border-radius: 50%;
   background-color: transparent;
   border: 2px solid #eb6e1f;
@@ -94,14 +96,14 @@ body {
 
 .containerbases .boxbaseson {
   background-color: #eb6e1f;
-  box-shadow: 0 0 8px #eb6e1f;
+  box-shadow: 0 0 10px #eb6e1f;
 }
 
 /* Inning Label & Number */
 .boxinnings, .boxinningslabel {
   background: #133c94;
   color: #ffffff;
-  font-size: 20px;
+  font-size: 22px;
   border: 1px solid #eb6e1f;
   border-radius: 4px;
 }
@@ -112,14 +114,16 @@ body {
   color: #001a3c;
   border: 1px solid #eb6e1f;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 22px;
+  padding: 0.4em 0.6em;
 }
 
 .boxouts {
   background: #000000;
   color: #ffffff;
   border: 1px solid #eb6e1f;
-  font-size: 20px;
+  font-size: 22px;
+  padding: 0.4em 0.6em;
 }
 
 /* Active Service Arrows */
@@ -135,3 +139,4 @@ body {
 .sgrlogo {
   display: none;
 }
+
