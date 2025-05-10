@@ -58,9 +58,10 @@ em {
   max-width: 50vw;
   margin: 0 auto;
   position: relative;
-  font-size: 4.5vw;
+  font-size: 4.2vw;
   display: grid;
-  grid-template: repeat(3, auto) / auto var(--pointswidth) 1.5em;
+  grid-template: repeat(3, auto) / 16vw 10vw auto;
+  gap: 0.2em;
 }
 
 .boxpoints,
@@ -124,10 +125,16 @@ em {
 .containerbaseball .containerlastrow {
   display: grid;
   grid-template-columns: 5vw 10vw auto 10vw;
-  font-size: 0.55em;
+  font-size: 0.5em;
   min-height: 2.5em;
   align-items: center;
   gap: 0.5em;
+}
+
+.containerbaseball .containerlastrow .box {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .containerbaseball .containerboxstrikes .box,
@@ -141,7 +148,7 @@ em {
 .containerbaseball .containerbases {
   position: relative;
   padding: 0;
-  min-height: 2.5em;
-  width: 3em;
+  min-height: 2.8em;
+  width: 2.8em;
   justify-self: end;
 }
